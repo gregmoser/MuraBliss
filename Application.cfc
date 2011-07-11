@@ -1,4 +1,4 @@
-component extends="framework" output="false" {
+component extends="core.utility.framework" output="false" {
 
 	// If the page request was an admin request then we need to setup all of the defaults from mura
 	if(isAdminRequest()) {
