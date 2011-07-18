@@ -7,7 +7,12 @@ component extends="core.utility.framework" output="false" {
 		include "../mappings.cfm";
 	}
 	
-	include "fw1Config.cfm";
+	include "config.cfm";
+	
+	//TODO: Not sure we have to do here. Seems like we have a lot of references to Slatwall here that are hard-coded
+	
+	
+	
 	variables.slatwallVfsRoot = "ram:///" & this.name;
 	this.mappings[ "/slatwallVfsRoot" ] = variables.slatwallVfsRoot;
 	
